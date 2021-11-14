@@ -1,0 +1,12 @@
+Q1: Pre-emptive (default) vs. Cooperative
+	Theoretically Cooperative would make each task faster, since each task is voluntarily release the control, however this is not have significant  effect for our program for several reason:
+		1.	our main thread which is controlled by interrupt does not care about Cooperative.
+		2.	The servo require enough time to move from one position to the target position, to make this action done correctly, we have to use semaphore, which takes approximately 1 second which Cooperative does have and advantages.
+
+Q2: With time slicing (default) and without:
+	again, our task is controlled by yeild or delay, with or without does not vary to much
+
+Q3:	 Different processor clock: - 168MHz (default) and 100Mhz 
+	this will make the system run faster, however, this would only effect tasks using internal clock, but our project is based on external clock, with multiple critical and semaphore,it has no effect our program.
+
+

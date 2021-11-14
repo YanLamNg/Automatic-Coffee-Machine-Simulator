@@ -1,0 +1,4 @@
+# Specify filepatterns you want git to ignore.
+Objects/
+RealTime_A2.uvguix.sheph
+RealTime_A2.uvguix.Ian
