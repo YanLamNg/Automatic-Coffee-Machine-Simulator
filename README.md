@@ -3,7 +3,7 @@
 
 
 
-#### Introduction
+### Introduction
 
 The goal of this Project is to implement FreeRTOS on the STM32F407-Disco1. We implement an automatic coffee machine that capable of executing multiple tasks based on FreeRTOS. All four User LEDs, button, audio output, and PWM (servo motor) of the STM32F407-Disco1 will be utilised. 
 
@@ -28,7 +28,9 @@ Then enter the brew state by DOUBLE CLICK, the system would take care from there
 After sound you would be back to start state  
 
 
-#### LED additional actions:
+
+
+### LED additional actions:
 
 In start mode:
 The Green LED is light up to indicate the program initialized correctly and ready to go.
@@ -44,23 +46,37 @@ The green light would blink every seconds so you could know how long does pass
 When playing the music, the Orange LED would blink.
 
 
-#### Button input:
+
+
+### Button input:
 Single click: only one click in 0.5 second
 Double click: double click in 0.5 second
 Long click: hold down for 1.5 second
 
 
-#### LCD 1602a:
+
+
+### LCD 1602a:
 For using LCD, wires connect between stm32f407 to LCD 1602a
+
 stm32f407 GPIO	--> LCD PIN
+
 GPIOD 0        	--> d4
+
 GPIOD 1        	--> d5
+
 GPIOD 2        	--> d6
+
 GPIOD 3        	--> d7
+
 GPIOD 6        	--> E
+
 GPIOD 7        	--> RS
+
 Gound          	--> VSS, RW, K
+
 5v             	--> VCC, A
+
 10k variable resistor   --> v0
 	
 	
